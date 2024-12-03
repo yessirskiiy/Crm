@@ -1,0 +1,23 @@
+.ganttPage {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.projectSelector {
+  margin-bottom: 2rem;
+}
+
+.ganttChartWrapper {
+  max-height: 60rem;
+  max-width: 70rem;
+  flex-grow: 1;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+

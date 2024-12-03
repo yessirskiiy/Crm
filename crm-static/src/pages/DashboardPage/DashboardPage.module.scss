@@ -1,0 +1,130 @@
+.dashboardContainer {
+  display: flex;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  flex: 0 0 12rem;
+  padding: 0.35rem;
+  background-color: #f9f9f9;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: calc(80vh - 2rem);
+}
+
+.projectsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projectItem {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  margin-top: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+.viewDetails {
+  color: black;
+  text-decoration: none;
+}
+
+.tasksWrapper {
+  flex: 1;
+  margin-left: 1.5rem;
+  height: 80vh;
+}
+
+.tasksHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.statusFilters {
+  display: flex;
+}
+
+.filterButton {
+  background-color: transparent;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.columnsContainer {
+  display: flex;
+  gap: 1rem;
+  height: calc(80vh - 4rem);
+}
+
+.taskColumn {
+  background-color: #ffffff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  width: 13rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  min-height: 100px; // Добавьте минимальную высоту, чтобы колонка имела пространство для дропа
+}
+
+.taskCard {
+  background-color: #f9f9f9;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  cursor: grab; // Добавьте курсор, чтобы показать пользователю, что элемент можно перетаскивать
+}
+
+.columnHeader {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+
+.taskTitle {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.taskDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboardContainer {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .tasksWrapper {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .columnsContainer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .taskColumn {
+    width: auto;
+  }
+}

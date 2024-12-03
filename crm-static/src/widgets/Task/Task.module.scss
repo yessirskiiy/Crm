@@ -1,0 +1,43 @@
+.taskRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr 1fr 1fr;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+
+  &:hover{
+    cursor: pointer;
+    background-color: rgba(230, 237, 245, 0.5);
+  }
+}
+
+.taskName, .taskEstimate, .taskSpentTime, .taskPriority, .taskStatus {
+  font-size: 14px;
+  color: #333;
+
+  p {
+    opacity: 30%;
+    margin-bottom: 5px;
+  }
+}
+
+.taskAssignee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.assigneeName {
+  font-size: 14px;
+  color: #333;
+}
+
+.taskPriority {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.priorityText {
+  font-size: 14px;
+}

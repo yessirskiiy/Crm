@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7fafc;
+}
+
+.card {
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 66.67%;
+    height: 75%;
+}
+
+.leftSection {
+    width: 50%;
+    background-color: #3b82f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+
+    .leftText {
+        color: #ffffff;
+
+        img {
+            margin-bottom: 1.5rem;
+        }
+
+        .title {
+            font-size: 2.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+
+        }
+    }
+}
+
+.rightSection {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .formTitle {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    .formGroup {
+        margin-bottom: 1rem;
+
+        label {
+            display: block;
+            color: #4a5568;
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .validate {
+            color: red;
+            font-size: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+    }
+
+    .checkboxGroup {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        label {
+            display: flex;
+            align-items: center;
+
+            input {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .submitButton {
+        width: 100%;
+        background-color: #3b82f6;
+        color: #ffffff;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        font-weight: 700;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #2563eb;
+        }
+    }
+
+    .footerText {
+        margin-top: 1rem;
+        text-align: center;
+        color: #718096;
+
+        a {
+            color: #3b82f6;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

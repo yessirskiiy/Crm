@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #f7fafc; // gray-100
+}
+
+.profileCard {
+  width: 25%; // 1/4
+  background-color: white;
+  padding: 1.5rem; // p-6
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // shadow-lg
+  margin: 1.5rem; // m-6
+  border-radius: 0.5rem; // rounded-lg
+
+}
+
+.profileImage {
+  width: 8rem; // w-32
+  height: 8rem; // h-32
+  border-radius: 50%; // rounded-full
+  margin-bottom: 1rem; // mb-4
+}
+
+.userName {
+  font-size: 1.125rem; // text-lg
+  font-weight: 600; // font-semibold
+}
+
+.infoContainer {
+  margin-top: 1rem; // mt-4
+}
+
+.label {
+  display: block;
+  color: #4a5568; // text-gray-600
+}
+
+.contentArea {
+  flex: 1;
+  padding: 2.5rem; // p-10
+}
+
+.contentCard {
+  background-color: white;
+  padding: 1.5rem; // p-6
+  border-radius: 0.5rem; // rounded-lg
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // shadow
+}
+
+.achievementsSection {
+  margin-top: 2.5rem; // mt-10
+}
+
+.achievementsTitle {
+  font-size: 1.25rem; // text-xl
+  font-weight: 600; // font-semibold
+  margin-bottom: 1rem; // mb-4
+}
+
+.achievementsList {
+  list-style-type: disc; // list-disc
+  padding-left: 1.5rem; // pl-6
+}

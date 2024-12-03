@@ -1,0 +1,49 @@
+.projectCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 0.9375rem;
+  margin-bottom: 1.25rem;
+  width: 100%;
+  max-width: 31.25rem;
+  height: 6.25rem;
+  cursor: pointer;
+}
+
+.projectCardIcon {
+  display: flex;
+  align-items: center;
+  margin-right: 0.9375rem;
+}
+
+.projectCardContent {
+  flex: 1;
+}
+
+.projectCardTitle {
+  font-size: 1rem; // Уменьшен размер шрифта для лучшего масштабирования
+  font-weight: 600;
+  margin: 0;
+  color: #2A2A2A;
+}
+
+.projectCardDate {
+  font-size: 0.875rem;
+  color: #A1A1A1;
+  margin-top: 0.3125rem;
+}
+
+.projectCardStatus {
+  display: flex;
+  align-items: center;
+}
+
+.projectCardDuration {
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  color: #A1A1A1;
+  margin-right: 0.625rem;
+}

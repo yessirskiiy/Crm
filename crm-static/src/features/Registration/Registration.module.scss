@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7fafc;
+}
+
+.formContainer {
+    display: flex;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 66.6667%;
+    height: 75%;
+
+
+    .imageSection {
+        width: 33.3333%;
+        background-color: #3b82f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2.5rem;
+
+        .textContent {
+            color: #fff;
+
+            .logo {
+                margin-bottom: 1.5rem;
+            }
+
+            .title {
+                font-size: 2.25rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+            .subtitle {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .formSection {
+        width: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .formTitle {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .formGroup {
+            margin-bottom: 1rem;
+
+            .formLabel {
+                display: block;
+                color: #4a5568;
+                font-size: 1rem;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            .validate {
+                color: red;
+                font-size: 0.75rem;
+                margin-top: 0.5rem;
+            }
+        }
+
+        .footerText {
+            margin-top: 1rem;
+            text-align: center;
+            color: #718096;
+
+            .signInLink {
+                color: #3b82f6;
+                text-decoration: underline;
+            }
+        }
+    }
+}
