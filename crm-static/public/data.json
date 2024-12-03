@@ -1,0 +1,39 @@
+//projects GET
+[
+  {
+    "Id": 1,
+    "Name": "Hackathon Project",
+    "Code": "H&h",
+    "Description": "High-performance project management app",
+    "created_by": 1,
+    "CreatedAt": "2024-10-09T17:42:34.078488Z",
+    "UpdatedAt": "0001-01-01T00:00:00Z"
+  }
+],
+
+//tasks GET
+//http://localhost/v1/projects/${Code}/tasks
+//http://localhost/v1/projects/${Code}/tasks/${TaskId}
+
+[
+  {
+    "TaskId": "H&h-8",
+    "project_id": 1,
+    "Title": "Notifications service",
+    "Description": "Develop service for notifications and reminders",
+    "assigned_to": 4,
+    "Status": "on hold",
+    "Priority": "minor",
+    "due_date": "2024-10-02T11:00:00Z",
+    "time_spent": 60,
+    "comments": [
+      {
+        "author": "Anna Davis",
+        "text": "Paused until API is ready",
+        "timestamp": "2024-09-21T15:00:00Z"
+      }
+    ],
+    "CreatedAt": "2024-10-09T17:42:34.085583Z",
+    "UpdatedAt": "2024-10-14T12:40:19.222766Z"
+  }
+]
